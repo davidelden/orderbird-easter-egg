@@ -1,5 +1,10 @@
-import EasterEggElement from '/javascript/modules/EasterEggModule.js';
+import { EasterEggElement, ClickElements } from '/javascript/modules/EasterEggModule.js';
 
-const element = new EasterEggElement;
+const easterEgg = new EasterEggElement;
+const clickElements = new ClickElements;
 
-document.body.appendChild(element.getDiv());
+clickElements.getValidElements().map(element => {
+  element.addEventListener('click', () => {
+    document.body.appendChild(easterEgg.getDiv());
+  });
+});

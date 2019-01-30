@@ -9,4 +9,4 @@ class EasterEggElement {
   }
 }
 
-export EasterEggElement;
+export default EasterEggElement;

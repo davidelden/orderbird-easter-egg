@@ -4,8 +4,23 @@ class EasterEggElement {
     this.div.setAttribute('id', 'easter-egg');
   }
 
-  addToDOM() {
-    document.body.appendChild(this.div);
+  getDiv() {
+    return this.div;
+  }
+
+  addToDOM(elem) {
+    document.body.appendChild(elem);
+  }
+
+  getSVG() {
+    fetch('../images/easter_egg__1.svg')
+      .then(res => res.text())
+      .then(text => {
+        this.getDiv().innerHTML = text;
+        return this.getDiv();
+      })
+      .then(div => this.addToDOM(div))
+      .catch(error => console.error(error));
   }
 }
 

@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 546.82 386.64" style="enable-background:new 0 0 546.82 386.64;" xml:space="preserve">
 <style type="text/css">
@@ -9,8 +7,56 @@
 	.st3{fill:#00A0DF;}
 	.st4{fill:#00416B;}
 	.st5{fill:#BDBCBC;}
+
+	#egg-2-bottom,
+	#egg-2-bird,
+	#egg-2-top {
+		opacity: 0;
+		transform: translate(-158px, 0px);
+
+		animation: show 1s ease 7.25s infinite;
+	}
+
+	#egg-1 {
+	  animation: shake 2s ease 1.5s 3, hide 1s ease 7.25s infinite;
+	}
+
+	#egg-2-bird {
+		animation: fly 2.85s ease 7.4s 1;
+	}
+
+	@keyframes shake {
+	  5% { transform: translate(1px, 1px) rotate(0deg); }
+	  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	  12% { transform: translate(-3px, 0px) rotate(1deg); }
+	  14% { transform: translate(3px, 2px) rotate(0deg); }
+	  18% { transform: translate(1px, -1px) rotate(1deg); }
+	  20% { transform: translate(-1px, 2px) rotate(-1deg); }
+	  22% { transform: translate(-3px, 1px) rotate(0deg); }
+	  24% { transform: translate(3px, 1px) rotate(-1deg); }
+	  26% { transform: translate(-1px, -1px) rotate(1deg); }
+	  28% { transform: translate(1px, 2px) rotate(0deg); }
+	  30% { transform: translate(1px, 1px) rotate(0deg); }
+	}
+
+	@keyframes hide {
+		0% { opacity: 0; }
+		100% { opacity: 0; }
+	}
+
+	@keyframes show {
+		0% { opacity: 1; }
+		100% { opacity: 1; }
+	}
+
+	@keyframes fly {
+		0% { opacity: 1; transform: translate(-158px, 0px) }
+		75% { opacity: 1 }
+		100% { opacity: 0; transform: translate(0px, -158px) }
+	}
+
 </style>
-<g>
+<g id="egg-1">
 	<path class="st0" d="M191.92,258.01c-24.17,0-43.76-25.46-43.76-56.86c0-31.4,19.59-56.86,43.76-56.86
 		c24.17,0,43.76,25.46,43.76,56.86C235.68,232.56,216.09,258.01,191.92,258.01z"/>
 	<g>
@@ -59,7 +105,7 @@
 			c1.1-1.37,2.23-2.71,3.42-4.01C157.75,174.86,162.07,171.01,167.06,167.92z"/>
 	</g>
 </g>
-<g>
+<g id="egg-2-bottom">
 	<g>
 		<path class="st0" d="M349.79,215.92c-24.17,0-43.76-6.74-43.76-15.04c0,31.4,19.59,56.86,43.76,56.86
 			c24.17,0,43.76-25.46,43.76-56.86C393.55,209.18,373.96,215.92,349.79,215.92z"/>
@@ -78,7 +124,7 @@
 	<path class="st5" d="M349.79,215.92c-24.17,0-43.76-6.74-43.76-15.04c0-8.31,19.59-15.04,43.76-15.04
 		c24.17,0,43.76,6.74,43.76,15.04C393.55,209.18,373.96,215.92,349.79,215.92z"/>
 </g>
-<g>
+<g id="egg-2-bird">
 	<g>
 		<g>
 			<path class="st4" d="M338.8,175.85c3.1,0.41,6.81,0.96,8.33,1.38c1.51,4.61,2.82,11.01,2.89,15.69
@@ -89,7 +135,7 @@
 		</g>
 	</g>
 </g>
-<g>
+<g id="egg-2-top">
 	<path class="st0" d="M346.22,172.35c21.06-11.85,34.84-27.33,30.76-34.57c-15.4-27.37-44.95-39.95-66.02-28.1
 		c-21.06,11.85-25.66,43.64-10.26,71.01C304.78,187.93,325.16,184.2,346.22,172.35z"/>
 	<path class="st3" d="M300.89,142.46c2.23-4.04,5-7.65,8.34-10.83c3.48-3.32,7.33-6.21,11.08-9.22c2.06-1.66,4.17-3.28,6.1-5.09
@@ -107,5 +153,4 @@
 		c-2.45,6-4,12.21-4.35,18.69c0.53,1.06,1.08,2.11,1.67,3.16C301.86,182.75,304.34,183.92,307.78,184.27z"/>
 </g>
 <ellipse class="st5" cx="191.88" cy="281.51" rx="22.54" ry="6.79"/>
-<ellipse class="st5" cx="349.59" cy="281.51" rx="22.54" ry="6.79"/>
 </svg>

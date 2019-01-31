@@ -2,6 +2,7 @@ class EasterEggElement {
   constructor() {
     this.div = document.createElement('div');
     this.div.setAttribute('id', 'easter-egg');
+    this.div.setAttribute('style', 'width: 50%');
   }
 
   getDiv() {

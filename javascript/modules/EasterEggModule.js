@@ -4,8 +4,8 @@ class EasterEggElement {
     this.div.setAttribute('id', 'easter-egg');
   }
 
-  getDiv() {
-    return this.div;
+  addToDOM() {
+    document.body.appendChild(this.div);
   }
 }
 

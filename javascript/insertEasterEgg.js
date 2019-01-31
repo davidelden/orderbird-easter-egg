@@ -7,7 +7,7 @@ const easterEgg = new EasterEggElement,
 
 clickElements.getValidElements().map(element => {
   element.addEventListener('click', () => {
-    document.body.appendChild(easterEgg.getDiv());
+    easterEgg.addToDOM();
   });
 });
 
